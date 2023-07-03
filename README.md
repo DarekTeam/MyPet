@@ -25,13 +25,11 @@
 
 ![Task 5](https://user-images.githubusercontent.com/99810114/221401222-7d436e91-2fdd-4389-8a95-c6ebc7e26300.jpg)
 
-5. Выложить [историю команд](https://github.com/ILYA-NASA/Kennel_account_system/blob/main/HistoryCommandsUbuntuTerminal.md) в терминале ubuntu
-6. Нарисовать [диаграмму](https://github.com/ILYA-NASA/Kennel_account_system/blob/main/UML.drawio), в которой есть класс родительский класс, домашние
+5. Выложить [историю команд] HistoryCommandsUbuntuTerminal.md в терминале ubuntu
+6. Нарисовать [диаграмму] UML.drawio, в которой есть класс родительский класс, домашние
 животные и вьючные животные, в составы которых в случае домашних
 животных войдут классы: собаки, кошки, хомяки, а в класс вьючные животные
 войдут: Лошади, верблюды и ослы).
-
-![UML](https://user-images.githubusercontent.com/99810114/221403005-bfe39717-2d41-431d-bc03-f78a1aeb76df.jpg)
 
 7. В подключенном MySQL репозитории создать базу данных “Друзья
 человека”
@@ -227,3 +225,21 @@ SELECT hm.Name, hm.Birthday, hm.Commands, ha.Genus_name, ya.Age_in_month
 FROM hamsters hm
 LEFT JOIN yang_animal ya ON ya.Name = hm.Name
 LEFT JOIN home_animals ha ON ha.Id = hm.Genus_id;
+```
+
+13. Создать [класс с Инкапсуляцией методов и наследованием по диаграмме] (https://github.com/DarekTeam/MyPet/tree/main/System/src/Model).
+14. Написать [программу, имитирующую работу реестра домашних животных](https://github.com/DarekTeam/MyPet/tree/main/System/src).
+В программе должен быть реализован следующий функционал:    
+	14.1 Завести новое животное    
+	14.2 определять животное в правильный класс    
+	14.3 увидеть список команд, которое выполняет животное    
+	14.4 обучить животное новым командам    
+	14.5 Реализовать навигацию по меню    
+15. Создайте [класс Счетчик](https://github.com/DarekTeam/MyPet/blob/main/System/src/Controller/Counter.java), у которого есть метод add(), увеличивающий̆
+значение внутренней̆ int переменной̆ на 1 при нажатии “Завести новое
+животное” Сделайте так, чтобы с объектом такого типа можно было работать в
+блоке try-with-resources. Нужно бросить исключение, если работа с объектом
+типа счетчик была не в ресурсном try и/или ресурс остался открыт. Значение
+считать в ресурсе try, если при заведении животного заполнены все поля.
+
+![Program](https://user-images.githubusercontent.com/99810114/221417421-93de1f4c-ad41-4f7e-a45d-edd5ec72f1d3.jpg)
